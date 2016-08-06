@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Nazwa Aplikacji</string>
+    <string name="highscoretext"></string>
+    <string name="header">Reaction Test</string>
 </resources>

@@ -8,38 +8,33 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary"
-    tools:context="com.example.bartomiej.trololoapp.MainActivity">
-
-    <TextView
+    tools:context="com.example.bartomiej.trololoapp.StartActivity">
+    <Chronometer
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reaction app"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#ffffff"
         android:layout_marginTop="150dp"
-        android:id="@+id/name" />
+        android:textColor="@color/white"
+        android:id="@+id/chronometer" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="START"
-        android:textSize="40sp"
-        android:layout_marginTop="150dp"
-        android:id="@+id/start"
-        android:layout_below="@+id/name"
-        android:gravity="center_vertical|center_horizontal"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorAccent"
-        android:onClick="onStartClick"/>
+        android:layout_height="100dp"
+        android:layout_marginBottom="165dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="pressButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainButton"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_below="@id/start"
-        android:layout_margin="50dp"
-        android:text="Highscore:"
-        android:textSize="25sp"
-        android:gravity="center"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chronometer"
+        android:layout_marginTop="250dp"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/highscore"/>
+
+
 
 </RelativeLayout>
